@@ -81,3 +81,9 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 [Mon Mar 16 08:02:50.794011 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
 [Mon Mar 16 09:04:26.051648 2020] [php7:error] [pid 19] [client 172.18.0.1:54282] script '/var/www/html/info.php' not found or unable to stat
 [Mon Mar 16 09:04:38.924291 2020] [php7:error] [pid 20] [client 172.18.0.1:54286] script '/var/www/html/info.php' not found or unable to stat
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Mar 16 18:50:02.020996 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Mon Mar 16 18:50:02.027424 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.18.0.2. Set the 'ServerName' directive globally to suppress this message
+[Tue Mar 17 07:57:57.406499 2020] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.38 (Debian) PHP/7.4.2 configured -- resuming normal operations
+[Tue Mar 17 07:57:57.412546 2020] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

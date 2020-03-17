@@ -13,7 +13,7 @@ try
 
 	if ($data > 0) {
 		echo '<table><tr><th>Ville</th><th>Maxima</th><th>Minima</th></tr>';
-		// output data of each row
+		// affiche les données de toutes la rangées
 		while($row = $result->fetch()) {
 			echo '<tr><td>'.$row['ville'].'</td><td>'.$row['haut'].'</td><td>'.$row['bas'].'</td></tr>';
 		}
@@ -31,3 +31,6 @@ catch(Exception $e)
 }
 
 ?>
+
+
+ 
