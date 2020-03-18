@@ -17,7 +17,3 @@ if ($data > 0) {
     echo '0 results';
 }
 ?>
-
-     
-
-
