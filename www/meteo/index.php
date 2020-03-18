@@ -34,6 +34,26 @@ require 'insert.php';
 
         <input type="submit" name="insert" value="submit">
     </form>
+
+    <form method="post" action="index.php">
+	<input type="submit" name="buttonDelete" value="Delete" onclick="return confirm('Are you sure?')" />
+	<table cellpadding="2" cellspacing="2" border="1">
+		<tr>
+			<th><input type="checkbox" id="checkBoxAll" /></th>
+			<th>Ville</th>
+			<th>Maxima</th>
+			<th>Minima</th>
+		</tr>
+		<?php while($data = $result->fetch(PDO::FETCH_OBJ)) { ?>
+		<tr>
+			<td><input type="checkbox" class="chkCheckBoxId"
+				value="<?php echo $result->ville; ?>" name="ville[]" /></td>
+			<td><?php echo $result->ville; ?></td>
+			<td><?php echo $result->haut; ?></td>
+			<td><?php echo $result->bas; ?></td>
+		</tr>
+		<?php } ?>
+	</table>
 </body>
 
 </html>
